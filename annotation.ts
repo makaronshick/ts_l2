@@ -169,7 +169,7 @@ class Teacher extends Person {
   specializations: string[] = [];
   courses: Course[] = [];
 
-  constructor(info: Info, specializations = []) {
+  constructor(info: Info, specializations: string[] = []) {
     super(info, Roles.teacher);
     this.specializations = specializations;
   }
